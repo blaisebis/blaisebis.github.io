@@ -70,13 +70,13 @@ var init = function (window) {
                 circle.x = 0;
             }
             if ( circle.x < 0) {
-                circle.x = 0;
+                circle.x = canvas.width;
             }
             if ( circle.y > canvas.height) {
                 circle.y = 0;
             }
             if ( circle.y < 0) {
-                circle.y = 0
+                circle.y = canvas.height;
             }
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             
