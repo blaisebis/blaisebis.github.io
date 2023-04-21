@@ -71,14 +71,14 @@ var init = function (window) {
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if (circle.y + circle.radius > canvas.height) {
-                circle.y = 0 - circle.radius;
+            if (circle.y > canvas.height) {
+                circle.y = 0
             }
-            if (circle.x - circle.radius < 0) {
-                circle.x = canvas.width + circle.radius;
+            if (circle.x < 0) {
+                circle.x = canvas.width
             }
-            if (circle.y - circle.radius < 0) {
-                circle.y = canvas.height + circle.radius;
+            if (circle.y < 0) {
+                circle.y = canvas.height
             }
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
